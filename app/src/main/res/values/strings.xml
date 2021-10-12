@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Fragments</string>
+    <string name="button">Send</string>
+    <string name="domyslne">Something</string>
 </resources>
