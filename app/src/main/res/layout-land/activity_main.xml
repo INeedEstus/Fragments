@@ -12,24 +12,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/color_frame1"
-        app:layout_constraintBottom_toTopOf="@+id/Frame2"
-        app:layout_constraintEnd_toStartOf="@+id/Frame3"
+        app:layout_constraintBottom_toTopOf="@+id/Frame4"
+        app:layout_constraintEnd_toStartOf="@+id/Frame2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/Frame2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@color/color_frame2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Frame4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Frame1">
 
     </FrameLayout>
 
@@ -38,11 +25,11 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/color_frame3"
-        app:layout_constraintBottom_toTopOf="@+id/Frame4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Frame1"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toEndOf="@+id/Frame4"
+        app:layout_constraintTop_toBottomOf="@+id/Frame2">
 
     </FrameLayout>
 
@@ -52,10 +39,23 @@
         android:layout_height="0dp"
         android:background="@color/color_frame4"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Frame3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Frame1">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/Frame2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_frame2"
+        app:layout_constraintBottom_toTopOf="@+id/Frame3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Frame2"
-        app:layout_constraintTop_toBottomOf="@+id/Frame3">
+        app:layout_constraintStart_toEndOf="@+id/Frame1"
+        app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
