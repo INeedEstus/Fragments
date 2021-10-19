@@ -86,10 +86,10 @@ public class MainActivity extends FragmentActivity implements Fragment1.OnButton
     @Override
     public void onButtonClickShuffle(){
         //Toast.makeText(getApplicationContext(), "Shuffle", Toast.LENGTH_SHORT).show();
-        List<Integer> list=new ArrayList<Integer>(Arrays.asList(frames[0],frames[1],frames[2],frames[3]));
+        List<Integer> list= new ArrayList<>(Arrays.asList(frames[0], frames[1], frames[2], frames[3]));
         Collections.shuffle(list);
 
-        for (int i=0;i<4;i++) frames[i] =list.get(i).intValue();
+        for (int i=0;i<4;i++) frames[i] = list.get(i);
 
         newFragments();
     }
@@ -128,12 +128,11 @@ public class MainActivity extends FragmentActivity implements Fragment1.OnButton
         if(!hidden) return;
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction=fragmentManager.beginTransaction();
-
+        transaction.setCustomAnimations(R.anim.fade_in,R.anim.fade_out);
         for(Fragment f:fragmentManager.getFragments()){
             if(f instanceof  Fragment1) continue;
             transaction.show(f);
         }
-        transaction.setCustomAnimations(R.anim.fade_in,R.anim.fade_out);
         transaction.addToBackStack(null);
         transaction.commit();
 
@@ -173,3 +172,5 @@ public class MainActivity extends FragmentActivity implements Fragment1.OnButton
     }*/
 }
 
+//Laboratorium adres:
+//https://tomasznowicki.gitbook.io/pam/
